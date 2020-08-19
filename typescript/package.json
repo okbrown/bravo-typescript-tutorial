@@ -1,0 +1,25 @@
+{
+  "name": "typescript-tutorial",
+  "version": "1.0.0",
+  "description": "Basic typescript tutorial for Bravo Team",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build:live",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "build": "tsc -p src",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Orlando Brown",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.0.27",
+    "jest": "^26.4.0",
+    "nodemon": "^2.0.4",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
